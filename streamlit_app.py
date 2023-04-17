@@ -6,8 +6,6 @@ import snowflake.connector
 from urllib.error import URLError
 
 streamlit.title('My Moms New Healthy Diner')
-
-
 streamlit.header('Breakfast Favorites')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
 streamlit.text('🥗 Kale, Spinach & Rocket Smoothie')
@@ -41,8 +39,7 @@ try:
 except URLError as e:
   streamlit.error()
   
-
-# temp stop on the code
+  # temp stop on the code
 streamlit.stop()
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
