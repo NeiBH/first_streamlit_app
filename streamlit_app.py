@@ -48,5 +48,5 @@ streamlit.dataframe(my_data_rows)
 
 # allow enduser to add fruit
 add_my_fruit = streamlit.text_input('what fruit would you like to add?')
-streamlit.write('The user entered ', add_my fruit)
+streamlit.write('The user entered ', add_my_fruit)
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+add_my_fruit)
