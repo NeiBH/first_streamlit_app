@@ -50,7 +50,7 @@ streamlit.header("The fruit load list contains:")
 # Snowfalke functions
 def get_fruit_load_list():
   with my_cnx_cursor() as my_cur:
-       my_cur.execute("SELECT * from fruit_load_list")
+       my_cur.execute("select * from fruit_load_list")
        return my_cur.fetchall()
 
 # Button to load fruit
@@ -60,6 +60,7 @@ if streamlit.button('Get Fruit Load List'):
    streamlit.dataframe(my_data_rows)
 
     
+
 # temp stop on the code
 streamlit.stop()
  
